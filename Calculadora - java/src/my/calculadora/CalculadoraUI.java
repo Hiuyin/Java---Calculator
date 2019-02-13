@@ -57,6 +57,7 @@ public class CalculadoraUI extends javax.swing.JFrame {
         jScrollPane1.setViewportView(msg_area);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculadora by Allah");
 
         button1.setActionCommand("button2");
         button1.setLabel("2");
@@ -188,6 +189,7 @@ public class CalculadoraUI extends javax.swing.JFrame {
 
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
+        msg_area1.setEditable(false);
         msg_area1.setColumns(20);
         msg_area1.setRows(5);
         jScrollPane2.setViewportView(msg_area1);
@@ -402,7 +404,6 @@ public class CalculadoraUI extends javax.swing.JFrame {
         this.firstNumber = this.operator = this.lastNumber = "";
     }
     private void resultExhibt(String input){
-        System.out.println("fui chamado");
         if(!testOperator()){
         this.firstNumber += input;
         this.labelText = firstNumber;
